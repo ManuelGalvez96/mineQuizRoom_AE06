@@ -1,0 +1,380 @@
+body {
+    font-family: 'Minecraftia', sans-serif;
+    background-color: #87CEEB;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #228B22;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.minecraft-style {
+    border: 5px solid #654321;
+    padding: 20px;
+    background-color: #8B4513;
+    color: white;
+}
+
+h1 {
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #006400;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: #008000;
+}
+/* Decoración Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    border: 2px solid #654321;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #DAA520;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FFD700;
+}
+
+.error {
+    color: #FF0000;
+    font-weight: bold;
+}
+/* Decoración Fondo */
+/* Suelo */
+.suelo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, #654321, #8B4513);
+}
+
+.hierba {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to top, #228B22, #32CD32);
+}
+
+/* Nubes */
+.nube {
+    position: absolute;
+    background-color: white;
+    border-radius: 50px;
+    filter: blur(1px);
+}
+
+.nube1 {
+    width: 120px;
+    height: 60px;
+    top: 10%;
+    left: 70%;
+}
+
+.nube2 {
+    width: 80px;
+    height: 40px;
+    top: 15%;
+    left: 10%;
+}
+
+/* Árboles */
+.arbol {
+    position: absolute;
+}
+
+.arbol1 {
+    width: 50px;
+    height: 100px;
+    bottom: 80px;
+    left: 20%;
+    background-color: #8B4513;
+    border-radius: 5px;
+}
+
+.arbol1::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #228B22;
+    border-radius: 10px;
+    top: -60px;
+    left: -15px;
+}
+
+.arbol2 {
+    width: 40px;
+    height: 80px;
+    bottom: 80px;
+    left: 80%;
+    background-color: #8B4513;
+    border-radius: 5px;
+}
+
+.arbol2::before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #228B22;
+    border-radius: 10px;
+    top: -50px;
+    left: -15px;
+}
+ /* Estilos generales */
+ body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #87CEEB; /* Color del cielo */
+    animation: cambiocolor 30s linear infinite;
+}
+
+    @keyframes cambiocolor {
+0% {
+    background-color: #87CEEB;
+}
+50% {
+    background-color: #00014c;
+}
+100% {
+    background-color: #87CEEB;
+}
+
+}
+
+/* Escena principal */
+.scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Suelo */
+.ground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(to top, #8B4513, #A36A3D); /* Textura de tierra */
+}
+
+/* Árbol */
+.tree {
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+}
+
+.tree .trunk {
+    width: 50px;
+    height: 100px;
+    background-color: #8B4513; /* Color del tronco */
+    margin: 0 auto;
+}
+
+.tree .leaves {
+    width: 100px;
+    height: 100px;
+    background-color: #228B22; /* Color de las hojas */
+    border-radius: 50%;
+    position: relative;
+    top: -80px;
+    left: -30px;
+}
+
+.tree .leaves::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height:200px;
+    background-color: #228B22;
+    border-radius: 0px
+}
+
+.tree2 {
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+}
+
+.tree2 .trunk2 {
+    width: 45px;
+    height: 160px;
+    background-color: #8B4513; /* Color del tronco */
+    left: 80%;
+    margin-left: 1000px;
+}
+
+.tree2 .leaves2 {
+    width: 100px;
+    height: 100px;
+    background-color: #228B22; /* Color de las hojas */
+    position: relative;
+    top: -80px;
+    left: 950px;
+}
+
+.tree2 .leaves2::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height:200px;
+    background-color: #228B22;
+    border-radius: 0px
+}
+
+
+/* Cerdo */
+.pig {
+    position: absolute;
+    bottom: 25%;
+    left: 40%;
+    width: 80px;
+    height: 40px;
+    background-color: #FFC0CB; /* Color del cerdo */
+    border-radius: 0%;
+}
+
+.pig::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+    background-color: #FFC0CB;
+    border-radius: 0%;
+}
+
+.pig .eye {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 0%;
+}
+
+.pig .eye::before {
+    content: "";
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 0%;
+}
+
+.pig .leg {
+    position: absolute;
+    bottom: -10px;
+    width: 10px;
+    height: 20px;
+    background-color: #FFC0CB;
+    border-radius: 0px;
+}
+
+.pig .leg.front {
+    left: 10px;
+}
+
+.pig .leg.back {
+    right: 10px;
+}
+ 
+/* Nubes */
+.cloud {
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50px;
+    animation: moveClouds 20s linear infinite;
+}
+
+.cloud::before, .cloud::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cloud::before {
+    width: 80px;
+    height: 80px;
+    top: -30px;
+    left: 10px;
+}
+
+.cloud::after {
+    width: 60px;
+    height: 60px;
+    top: -20px;
+    right: 10px;
+}
+
+/* Animación de nubes */
+@keyframes moveClouds {
+    from { transform: translateX(-1000px); }
+    to { transform: translateX(200vh); }
+}
+
+.pig {
+    animation: movePig 12s linear infinite;
+}
+
+@keyframes movePig {
+    from { transform: translateX(-650px); }
+    to { transform: translateX(140vh); }
+}
+    
